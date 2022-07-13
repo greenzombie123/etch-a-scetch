@@ -115,4 +115,5 @@ body {
 .popup .message{
     font-size: 1.8rem;
     height: 2rem;
+    color: red;
 }

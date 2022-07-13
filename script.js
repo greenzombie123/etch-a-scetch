@@ -63,25 +63,33 @@ function openResizeMessage(){
 }
 
 function closeResizeMessage(){
-    
+    popup.style.display = "none";
+    opacity.style.display = 'none';
 }
 
-enter.addEventListener('click', )
+enter.addEventListener('click', enterGridSize);
+reset.addEventListener('click', resetGrid);
 
 function enterGridSize(){
     var numberofTiles = gridsize.value;
     if (numberofTiles <= 0) {
         message.textContent = "Please enter a number greater than 0";
+        gridsize.value = '';
     }
-    else if (numberofTiles <= 64) {
+    else if (numberofTiles <= 50) {
+        message.textContent = '';
+        gridsize.value = '';
+
         gridContainer.textContent = '';
         createGrid(numberofTiles);
+        closeResizeMessage();
     }
     else
         message.textContent = "Please enter a number of 64 or below";
-    
+        gridsize.value = '';
 }
 
 function resetGrid(){
-    
+    const allDivs = document.querySelectorAll('.gridContainer div');
+    allDivs.forEach(div=>div.classList.remove('black'));
 }
