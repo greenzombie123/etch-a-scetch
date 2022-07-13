@@ -1,0 +1,118 @@
+html * {
+  box-sizing: border-box;
+}
+
+html {
+  /* height: 100%; */
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* display: flex;
+    flex-flow: column; */
+}
+
+/* Main Styles*/
+
+.header {
+  /* border: 1px solid black; */
+  /* background-color: rgb(97, 95, 95); */
+  font-size: 3rem;
+  padding: 5px;
+  text-align: center;
+}
+
+.opacity {
+  display: none;
+  z-index: 1;
+  background-color: rgba(101, 101, 101, 0.436);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main {
+  /* height: 100%; */
+  padding-top: 50px;
+  /* background-color: rgb(193, 188, 188); */
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
+}
+
+.gridContainer {
+  /* margin: 0 0 30px 0; */
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  display: grid;
+}
+
+.gridContainer div {
+  border: 1px solid black;
+}
+
+.buttonSection {
+  margin-top: 50px;
+  width: 500px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonSection button {
+  width: 200px;
+  height: 80px;
+  font-size: 1.5em;
+}
+
+.black {
+  background-color: black;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  height: 30vh;
+  width: 30vw;
+  top: 40%;
+  left: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: -25vh;
+  margin-left: -15vw;
+  background-color: rgb(243 242 242);
+  padding-top: 35px;
+  text-align: center;
+}
+
+.popup input {
+  font-size: 2rem;
+  display: block;
+  margin: 20px auto 5px;
+}
+
+.popup label {
+  display: block;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.popup button {
+    width: 100px;
+    font-size: 1.4rem;
+}
+
+.popup .message{
+    font-size: 1.8rem;
+    height: 2rem;
+}
